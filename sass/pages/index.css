@@ -16,7 +16,7 @@
 }
 #home h2 {
   position: relative;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 1%;
   border-radius: 40px;
   cursor: default;
@@ -118,6 +118,11 @@
   text-shadow: 0 0 5px rgba(0, 212, 255, 0.7);
 }
 
+#contato {
+  scroll-snap-align: unset;
+  height: 80vh;
+}
+
 section:not(:first-of-type) {
   height: 100vh;
   padding: 40px;
@@ -127,7 +132,6 @@ section:not(:first-of-type) {
   scroll-snap-align: center;
 }
 section main {
-  height: 100vh;
   padding: 40px;
   color: #ffffff;
   position: relative;

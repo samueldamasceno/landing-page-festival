@@ -108,7 +108,7 @@ header nav ul li a:hover::after {
 
 footer {
   scroll-snap-align: end;
-  height: 100px;
+  height: 20vh;
   background-color: #1e1e1e;
   display: flex;
   align-items: center;
@@ -187,7 +187,7 @@ footer .footer-social a:hover::after {
 }
 #home h2 {
   position: relative;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 1%;
   border-radius: 40px;
   cursor: default;
@@ -289,6 +289,11 @@ footer .footer-social a:hover::after {
   text-shadow: 0 0 5px rgba(0, 212, 255, 0.7);
 }
 
+#contato {
+  scroll-snap-align: unset;
+  height: 80vh;
+}
+
 section:not(:first-of-type) {
   height: 100vh;
   padding: 40px;
@@ -298,7 +303,6 @@ section:not(:first-of-type) {
   scroll-snap-align: center;
 }
 section main {
-  height: 100vh;
   padding: 40px;
   color: #ffffff;
   position: relative;

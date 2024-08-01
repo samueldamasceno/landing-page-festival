@@ -2,29 +2,31 @@
 
 @forward 'home';
 @forward 'artistas';
+@forward 'programacao';
+@forward 'inscricao';
+@forward 'contato';
 
 section {
     &:not(:first-of-type) {
         height: 100vh;
         padding: 40px;
-        color: #ffffff;
+        color: $cor5;
         position: relative;
         overflow: hidden;
         scroll-snap-align: center;
     }
 
     main {
-    height: 100vh;
     padding: 40px;
-    color: #ffffff;
+    color: $cor5;
     position: relative;
     overflow: hidden;
     }
 
     h2 {
         font-size: 3rem;
-        color: #e83e8c;
-        font-family: 'Orbitron', sans-serif;
+        color: $cor3;
+        font-family: $font1;
         text-shadow: 0 0 15px rgba(232, 62, 140, 0.8);
         margin-bottom: 20px;
     }
@@ -35,11 +37,11 @@ section {
     }
 
     &:nth-child(even) {
-        background: #121212a1;
+        background: $cor1b;
     }
 
     &:nth-child(odd) {
-        background: rgba(142, 2, 225, 0.7);
+        background: $cor4b;
     }
 
     &:nth-child(odd)::before {
