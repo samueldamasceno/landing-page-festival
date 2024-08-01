@@ -37,10 +37,12 @@ section {
     }
 
     &:nth-child(even) {
+        @include selectionColor($cor2, $cor1);
         background: $cor1b;
     }
 
     &:nth-child(odd) {
+        @include selectionColor($cor3, $cor2);
         background: $cor4b;
     }
 

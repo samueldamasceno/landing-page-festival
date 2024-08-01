@@ -41,3 +41,10 @@
         transform: scaleX(1);
     }
 }
+
+@mixin selectionColor ($fundo, $texto) {
+    ::selection {
+        background-color: $fundo;
+        color: $texto;
+    }
+}

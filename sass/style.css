@@ -330,8 +330,24 @@ section p {
 section:nth-child(even) {
   background: rgba(18, 18, 18, 0.631372549);
 }
+section:nth-child(even) ::-moz-selection {
+  background-color: #00d4ff;
+  color: #1e1e1e;
+}
+section:nth-child(even) ::selection {
+  background-color: #00d4ff;
+  color: #1e1e1e;
+}
 section:nth-child(odd) {
   background: rgba(142, 2, 225, 0.7);
+}
+section:nth-child(odd) ::-moz-selection {
+  background-color: #e83e8c;
+  color: #00d4ff;
+}
+section:nth-child(odd) ::selection {
+  background-color: #e83e8c;
+  color: #00d4ff;
 }
 section:nth-child(odd)::before {
   content: " ";
