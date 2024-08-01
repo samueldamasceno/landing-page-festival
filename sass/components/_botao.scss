@@ -1,0 +1,22 @@
+@use '../abstract/index' as *;
+
+.btn-inscricao {
+    display: inline-block;
+    background-color: $cor2;
+    color: $cor1;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.5);
+    cursor: pointer;
+    margin-top: 6%;
+}
+
+.btn-inscricao:hover {
+    background-color: $cor3;
+    transform: scale(1.2);
+    box-shadow: 0 6px 20px rgba(232, 62, 140, 0.7);
+}
