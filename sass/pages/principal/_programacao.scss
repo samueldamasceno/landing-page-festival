@@ -1,0 +1,66 @@
+@use '../../abstract/index' as *;
+
+#programacao {
+
+    h2 {
+        background-color: $cor2;
+        color: $cor3;
+        padding: 10px;
+        border-radius: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        @include glassEffect($cor4, 0.7);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 16px;
+        border: 5px solid $cor6;
+
+        table {
+            color: $cor1;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+
+            th, td {
+                padding: 5px;
+                text-align: center;
+            }
+
+            th {
+                background-color: $cor5;
+                border-radius: 20px;
+            }
+
+            tbody tr {
+                &:nth-child(even) {
+                    background-color: $cor3b;
+
+                    &:hover {
+                        background-color: $cor3;
+                    }
+                }
+
+                &:nth-child(odd) {
+                    background-color: $cor4b;
+
+                    &:hover {
+                        background-color: $cor4;
+                    }
+                }
+                
+                td:nth-child(2) {
+                    color: white;
+                    font-weight: bold;
+                }
+
+            }
+        }
+    }
+}

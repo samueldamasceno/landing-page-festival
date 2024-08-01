@@ -108,7 +108,7 @@
   transition: transform 0.3s ease;
 }
 #artistas .container .artistas-lista .artista:hover {
-  transform: scale(2);
+  transform: scale(1.4);
   z-index: 4;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
 }
@@ -123,6 +123,58 @@
   text-align: center;
   text-shadow: 0 0 5px rgba(0, 212, 255, 0.7);
   text-wrap: pretty;
+}
+
+#programacao h2 {
+  background-color: #00d4ff;
+  color: #e83e8c;
+  padding: 10px;
+  border-radius: 30px;
+  width: 100%;
+  text-align: center;
+}
+#programacao .container {
+  background: rgb(142, 2, 225);
+  opacity: 0.7;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  border: 5px solid #e0e0e0;
+}
+#programacao .container table {
+  color: #1e1e1e;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+#programacao .container table th, #programacao .container table td {
+  padding: 5px;
+  text-align: center;
+}
+#programacao .container table th {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+#programacao .container table tbody tr:nth-child(even) {
+  background-color: rgba(232, 62, 140, 0.7);
+}
+#programacao .container table tbody tr:nth-child(even):hover {
+  background-color: #e83e8c;
+}
+#programacao .container table tbody tr:nth-child(odd) {
+  background-color: rgba(142, 2, 225, 0.7);
+}
+#programacao .container table tbody tr:nth-child(odd):hover {
+  background-color: rgb(142, 2, 225);
+}
+#programacao .container table tbody tr td:nth-child(2) {
+  color: white;
+  font-weight: bold;
 }
 
 #contato {
