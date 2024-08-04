@@ -78,3 +78,11 @@ section {
         z-index: -4;
     }
 }
+
+// media queries
+
+@media (max-width: 500px) {
+    section {
+        height: auto;
+    }
+}

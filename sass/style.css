@@ -175,6 +175,8 @@ footer .footer-social a:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 #home:before {
   content: "";
@@ -239,8 +241,10 @@ footer .footer-social a:hover::after {
 
 #artistas .container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 #artistas .container h2 {
   margin-bottom: 3%;
@@ -305,15 +309,16 @@ footer .footer-social a:hover::after {
   text-align: center;
 }
 #programacao .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   background: rgb(142, 2, 225);
   opacity: 0.7;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.5px);
   -webkit-backdrop-filter: blur(9.5px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 16px;
   border: 5px solid #e0e0e0;
 }
@@ -353,9 +358,50 @@ footer .footer-social a:hover::after {
   font-weight: bold;
 }
 
+#inscricao .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#inscricao .container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  height: 60vh;
+}
+#inscricao .container form label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#inscricao .container form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background-color: #e0e0e0;
+  color: #1e1e1e;
+}
+#inscricao .container form input, #inscricao .container form button {
+  width: 40%;
+}
+
 #contato {
   scroll-snap-align: unset;
   height: 80vh;
+}
+#contato .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 section:not(:first-of-type) {
@@ -434,4 +480,10 @@ section:nth-child(even)::before {
   background-position: 50% 0;
   background-size: cover;
   z-index: -4;
+}
+
+@media (max-width: 500px) {
+  section {
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

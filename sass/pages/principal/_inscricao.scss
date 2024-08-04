@@ -1,0 +1,37 @@
+@use '../../abstract/index' as *;
+
+#inscricao {
+    .container {
+        @include container();
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border: 1px solid $cor5;
+            border-radius: 30px;
+            height: 60vh;
+
+            label {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            input {
+                padding: 10px;
+                margin-bottom: 20px;
+                border: none;
+                border-radius: 30px;
+                outline: none;
+                background-color: $cor6;
+                color: $cor1;
+            }
+
+            input, button {
+                width: 40%;
+            }
+        }
+    }
+}

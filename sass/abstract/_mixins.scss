@@ -56,3 +56,11 @@
     backdrop-filter: blur(9.5px);
     -webkit-backdrop-filter: blur(9.5px);
 }
+
+@mixin container ($direction: column) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+}
