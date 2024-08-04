@@ -35,7 +35,6 @@
 
             th {
                 background-color: $cor5;
-                border-radius: 20px;
             }
 
             tbody tr {
@@ -43,7 +42,11 @@
                     background-color: $cor3b;
 
                     &:hover {
-                        background-color: $cor3;
+                        background-color: $cor6;
+
+                        td {
+                            color: $cor3;
+                        }
                     }
                 }
 
@@ -51,10 +54,14 @@
                     background-color: $cor4b;
 
                     &:hover {
-                        background-color: $cor4;
+                        background-color: $cor6;
+
+                        td {
+                            color: $cor4;
+                        }
                     }
                 }
-                
+
                 td:nth-child(2) {
                     color: white;
                     font-weight: bold;

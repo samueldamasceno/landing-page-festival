@@ -158,19 +158,24 @@
 }
 #programacao .container table th {
   background-color: #ffffff;
-  border-radius: 20px;
 }
 #programacao .container table tbody tr:nth-child(even) {
   background-color: rgba(232, 62, 140, 0.7);
 }
 #programacao .container table tbody tr:nth-child(even):hover {
-  background-color: #e83e8c;
+  background-color: #e0e0e0;
+}
+#programacao .container table tbody tr:nth-child(even):hover td {
+  color: #e83e8c;
 }
 #programacao .container table tbody tr:nth-child(odd) {
   background-color: rgba(142, 2, 225, 0.7);
 }
 #programacao .container table tbody tr:nth-child(odd):hover {
-  background-color: rgb(142, 2, 225);
+  background-color: #e0e0e0;
+}
+#programacao .container table tbody tr:nth-child(odd):hover td {
+  color: rgb(142, 2, 225);
 }
 #programacao .container table tbody tr td:nth-child(2) {
   color: white;
