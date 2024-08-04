@@ -9,7 +9,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: 50%;
             border: 1px solid $cor5;
             border-radius: 30px;
             height: 60vh;
@@ -27,6 +27,16 @@
                 outline: none;
                 background-color: $cor6;
                 color: $cor1;
+                text-align: center;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    border: 5px solid $cor3b;
+                }
+
+                &:focus {
+                    border: 5px solid $cor3;
+                }
             }
 
             input, button {

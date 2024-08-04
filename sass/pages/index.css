@@ -199,7 +199,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   border: 1px solid #ffffff;
   border-radius: 30px;
   height: 60vh;
@@ -216,6 +216,14 @@
   outline: none;
   background-color: #e0e0e0;
   color: #1e1e1e;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+#inscricao .container form input:hover {
+  border: 5px solid rgba(232, 62, 140, 0.7);
+}
+#inscricao .container form input:focus {
+  border: 5px solid #e83e8c;
 }
 #inscricao .container form input, #inscricao .container form button {
   width: 40%;
